@@ -37,14 +37,22 @@ export const Overlay = () => {
         <p className="outro__text">Thank You! Don't hesitate to reach out by clicking on the button below!</p>
       </div>
       <div className={`outro ${end ? "outro--appear" : ""}`}>
+        <button className="explore"
+            onClick={() => {
+              window.location = 'https://www.linkedin.com/in/cesar-gonzalez-2b9b8b4b/'
+            }}
+          >
+            LinkedIn Profile
+          </button>
+          &nbsp;
           <button className="explore"
-              onClick={() => {
-                window.location = 'https://www.linkedin.com/in/cesar-gonzalez-2b9b8b4b/'
-              }}
-            >
-              LinkedIn Profile
-            </button>
-        </div>
+            onClick={() => {
+              window.location = 'https://github.com/KaizerBuns/'
+            }}
+          >
+            Github Profile
+          </button>
+      </div>
     </div>
   );
 };
